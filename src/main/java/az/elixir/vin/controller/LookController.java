@@ -36,6 +36,10 @@ public class LookController {
 
         System.out.println(vinCode);
         UserEntity userEntity = (UserEntity) httpSession.getAttribute("user");
+        if(userEntity==null){
+            redirectAttributes.addFlashAttribute("error6","Zəhmət olmasa daxil olun...");
+            return "redirect:/";
+        }
 
         OrderEntity orderEntity = orderRepository.findByVinCode(vinCode);
         if(orderEntity == null){

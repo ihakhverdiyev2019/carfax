@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -42,9 +43,13 @@ private UserRepository userRepository;
 
 
     @GetMapping("/home")
-    public String home(Model model, HttpSession httpSession) throws SQLException, IOException {
+    public String home(Model model, HttpSession httpSession, RedirectAttributes redirectAttributes) throws SQLException, IOException {
 
         UserEntity userEntity = (UserEntity) httpSession.getAttribute("user");
+        if(userEntity==null){
+            redirectAttributes.addFlashAttribute("error6","Zəhmət olmasa daxil olun...");
+            return "redirect:/";
+        }
         CommonEntity commonEntity = commonRepository.findById(1).get();
         Clob photo = commonEntity.getPhotoBase64();
         Reader r = photo.getCharacterStream();

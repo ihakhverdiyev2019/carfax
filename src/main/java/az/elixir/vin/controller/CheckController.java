@@ -39,7 +39,11 @@ public class CheckController {
     public String check(@Validated @ModelAttribute("vinCode") String vinCode,
 
                         RedirectAttributes redirectAttributes, HttpSession httpSession) {
-
+        UserEntity userEntity = (UserEntity) httpSession.getAttribute("user");
+        if(userEntity==null){
+            redirectAttributes.addFlashAttribute("error6","Zəhmət olmasa daxil olun...");
+            return "redirect:/";
+        }
         SendRequest sendRequest = new SendRequest();
         System.out.println(vinCode);
 
@@ -48,7 +52,6 @@ public class CheckController {
         int response =0;
 
 
-        UserEntity userEntity = (UserEntity) httpSession.getAttribute("user");
         if(orderEntity==null){
             response = sendRequest.check("/carfax/check?vincode=" + vinCode + "&api_key=3aef82da-d3b6-4f75-844d-e86890b88787");
 

@@ -46,6 +46,10 @@ public class OrderController {
     @GetMapping("/order/{vinCode}")
     public String home(@PathVariable String vinCode, Model model, RedirectAttributes redirectAttributes, HttpSession httpSession) {
         UserEntity userEntity = (UserEntity) httpSession.getAttribute("user");
+        if(userEntity==null){
+            redirectAttributes.addFlashAttribute("error6","Zəhmət olmasa daxil olun...");
+            return "redirect:/";
+        }
         SendRequest sendRequest = new SendRequest();
 
         CommonEntity commonEntity = commonRepository.findById(1).get();

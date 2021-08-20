@@ -50,19 +50,17 @@ public class LoginController {
     public String register(@Validated @ModelAttribute("login") LoginDTO loginDTO, RedirectAttributes redirectAttributes, HttpSession httpSession) {
         SHAEncryption shaEncryption =new SHAEncryption();
         UserEntity userEntity = userRepository.findByEmailAndPassword(loginDTO.getEmail(),shaEncryption.get_SHA_512_SecurePassword(loginDTO.getPassword()));
-        if(userEntity==null){
-        redirectAttributes.addFlashAttribute("errorLogin", "İstifadəçi Tapılmadı.");
 
-            return "redirect:/login";
+        if (userEntity!=null) {
+            httpSession.setAttribute("user",userEntity);
+
+            return "redirect:/home";
         }
-        httpSession.setAttribute("user",userEntity);
+
+         redirectAttributes.addFlashAttribute("errorLogin", "İstifadəçi Tapılmadı...");
+
+         return "redirect:/";
 
 
-
-
-
-
-
-        return "redirect:/home";
     }
 }

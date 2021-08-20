@@ -30,7 +30,9 @@
                 <img th:src="@{/images/logo.svg}" alt="logo">
               </div>
               <h4>Salam! Başlayaq...</h4>
-              <h6 class="font-weight-light">Davam Etmək Üçün Giriş Edin.</h6>
+              <h6 class="font-weight-light text-danger"  th:if="${error6 == 'Zəhmət olmasa daxil olun...'}" th:text="${error6}">Error</h6>
+              <h6 class="font-weight-light text-danger"  th:if="${errorLogin == 'İstifadəçi Tapılmadı...'}" th:text="${errorLogin}">Error</h6>
+
               <form class="pt-3" th:object="${login}" th:action="@{/do-login}" method="post">
                 <div class="form-group">
                   <input type="email" class="form-control form-control-lg" required name="email" id="exampleInputEmail1" placeholder="E-Poçta">
