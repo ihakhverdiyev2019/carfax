@@ -51,13 +51,13 @@ private UserRepository userRepository;
             return "redirect:/";
         }
         CommonEntity commonEntity = commonRepository.findById(1).get();
-        Clob photo = commonEntity.getPhotoBase64();
-        Reader r = photo.getCharacterStream();
-        StringBuffer buffer = new StringBuffer();
-        int ch;
-        while ((ch = r.read())!=-1) {
-            buffer.append(""+(char)ch);
-        }
+//        Clob photo = commonEntity.getPhotoBase64();
+//        Reader r = photo.getCharacterStream();
+//        StringBuffer buffer = new StringBuffer();
+//        int ch;
+//        while ((ch = r.read())!=-1) {
+//            buffer.append(""+(char)ch);
+//        }
 
         List<OrderHistory> orderHistories = orderHistoryRepository.findAllByCustomerId(userEntity.getId());
 
@@ -74,7 +74,7 @@ private UserRepository userRepository;
 
 
         model.addAttribute("numberOrder",commonEntity.getNumberOfOrder());
-        model.addAttribute("coverPhoto",buffer.toString());
+//        model.addAttribute("coverPhoto",buffer.toString());
         model.addAttribute("balance",   df2.format(userEntity.getBalance()));
         model.addAttribute("history",   orderDetails);
         model.addAttribute("expense",   df2.format(userEntity.getExpense()));

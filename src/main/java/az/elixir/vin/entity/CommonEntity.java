@@ -13,8 +13,8 @@ public class CommonEntity {
 
     private int numberOfOrder;
 
-    @Lob
-    private Clob photoBase64;
+//    @Lob
+//    private Clob photoBase64;
 
 
     public CommonEntity() {
@@ -36,11 +36,11 @@ public class CommonEntity {
         this.numberOfOrder = numberOfOrder;
     }
 
-    public Clob getPhotoBase64() {
-        return photoBase64;
-    }
-
-    public void setPhotoBase64(Clob photoBase64) {
-        this.photoBase64 = photoBase64;
-    }
+//    public Clob getPhotoBase64() {
+//        return photoBase64;
+//    }
+//
+//    public void setPhotoBase64(Clob photoBase64) {
+//        this.photoBase64 = photoBase64;
+//    }
 }

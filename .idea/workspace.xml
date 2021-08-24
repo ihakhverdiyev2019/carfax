@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2caebb16-bc06-4544-b937-e61bf92e15db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/CommonEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/CommonEntity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,18 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/LookController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/CheckController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="71" column="22" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="71" selection-end-column="22" />
+            <state relative-caret-position="969">
+              <caret line="81" column="55" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -101,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+            <state relative-caret-position="591">
+              <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,7 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/CommonEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="44" column="7" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="44" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -178,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/repository/OrderHistoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/repository/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/repository/CommonRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/CommonEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/utils/SHAEncryption.java" />
@@ -186,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/register.html" />
-        <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/LookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/CheckController.java" />
@@ -196,6 +195,8 @@
         <option value="$PROJECT_DIR$/system.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/CommonEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/HomeController.java" />
       </list>
     </option>
   </component>
@@ -206,9 +207,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -256,6 +259,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vin" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carfax" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfax" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vin" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carfax" type="b2602c69:ProjectViewProjectNode" />
@@ -315,7 +327,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1629805102167" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1629805841708" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -376,18 +388,18 @@
       <updated>1629178236106</updated>
       <workItem from="1629178238313" duration="41283000" />
       <workItem from="1629456247327" duration="703000" />
-      <workItem from="1629457469227" duration="6748000" />
+      <workItem from="1629457469227" duration="7487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48734000" />
+    <option name="totallyTimeSpent" value="49473000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
+    <frame x="1912" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25752687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19038156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -397,7 +409,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3351709" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23694466" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -525,27 +537,6 @@
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/CommonEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -745,20 +736,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="71" column="22" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="71" selection-end-column="22" />
+        <state relative-caret-position="969">
+          <caret line="81" column="55" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -770,10 +758,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/entity/CommonEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="612">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/elixir/vin/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
